@@ -16,9 +16,9 @@ else
     sudo rm -rf node*
 
     NEW_VERSION=$(/node/bin/node --version)
-    if [ "${NEW_VERSION}" != "${NODE_VERSION}" ];
+    if [ "${NEW_VERSION}" != "v${NODE_VERSION}" ];
     then
-        echo "${NEW_VERSION} did not match ${NODE_VERSION}"
+        echo "${NEW_VERSION} did not match v${NODE_VERSION}"
         exit 1
     fi
 fi
