@@ -1,0 +1,23 @@
+{
+  "name": "junior",
+  "version": "0.0.0",
+  "description": "James' Universal Node Integration Boiler Plate",
+  "main": "./lib/junior.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaw187/junior.git"
+  },
+  "keywords": [
+    "hapi",
+    "boilerplate"
+  ],
+  "author": "James Weston",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaw187/junior/issues"
+  },
+  "homepage": "https://github.com/jaw187/junior#readme"
+}
