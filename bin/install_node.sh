@@ -11,8 +11,8 @@ else
     cd /tmp
     curl -s -O "https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x64.tar.xz"
     tar xf node-v${NODE_VERSION}-linux-x64.tar.xz
-    sudo rm -rf node*
     sudo mv node-v${NODE_VERSION}-linux-x64 /node
+    sudo rm -rf node*
 
     NEW_VERSION=$(/node/bin/node --version)
     if [ "${NEW_VERSION}" != "${NODE_VERSION}" ];
