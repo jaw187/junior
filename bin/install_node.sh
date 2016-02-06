@@ -8,11 +8,11 @@ if [ "${CURRENT}" == "${NODE_VERSION}" ];
 then
     echo "Already at version ${NODE_VERSION}"
 else
-    cd /
-    rm -rf node*
+    cd /tmp
     curl -s -O "https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x64.tar.xz"
     tar xf node-v${NODE_VERSION}-linux-x64.tar.xz
-    mv node-v${NODE_VERSION}-linux-x64 node
+    sudo rm -rf node*
+    sudo mv node-v${NODE_VERSION}-linux-x64 /node
 
     NEW_VERSION=$(/node/bin/node --version)
     if [ "${NEW_VERSION}" != "${NODE_VERSION}" ];
